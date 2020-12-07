@@ -1,0 +1,14 @@
+body{
+    padding: 1em;
+}
+
+.container {
+    padding: 1em;
+}
+
+footer, header {
+    background-color: midnightblue;
+    padding: 1em;
+    color: white;
+    text-align: center;
+}
