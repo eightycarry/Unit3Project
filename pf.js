@@ -21,6 +21,7 @@ $(document).ready(function () {
             housing: parseFloat($("#housing").val()),
             transportation: parseFloat($("#transportation").val()),
             utilities: parseFloat($("#utilities").val()),
+            otherNeeds: parseFloat($("#otherNecessities").val()),
         }
 
         const userWants = {
@@ -28,11 +29,13 @@ $(document).ready(function () {
             travel: parseFloat($("#travel").val()),
             entertainment: parseFloat($("#entertainment").val()),
             mealsOut: parseFloat($("#mealsOut").val()),
+            otherWants: parseFloat($("#otherWants").val()),
         }
 
         const userSaves = {
             savings: parseFloat($("#savings").val()),
             debt: parseFloat($("#debt").val()),
+            otherSaves: parseFloat($("#otherSavings").val()),
         }
 
         var necessities = parseFloat(userData.income * 0.50).toFixed(2);
