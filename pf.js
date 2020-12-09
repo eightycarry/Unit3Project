@@ -129,17 +129,23 @@ $(document).ready(function () {
         var savesTotal = parseFloat(savings + debt + otherSaves).toFixed(2);
 
         //give the user advise based on the amount spent on necessities/wants/savings in comparison to their monthly income
-        if (wantsTotal > wants) {
+        //needs advice
+        if (needsTotal >= necessities) {
+            $("#adviceN").text("Your necessary expenses exceed how much you make,")
+        }
+
+        //wants advice
+        if (wantsTotal >= wants) {
             $("#adviceW").text("You should reduce spending");
-        } else if (wantsTotal < wants) {
+        } else if (wantsTotal <= wants) {
             $("#adviceW").text("You're on the right track");
         }
 
         //display data
+        $("#nameOutput").text(userData.name + ',');
         $("#necessities").text(necessities);
         $("#wants").text(wants);
         $("#save").text(save);
-        $("#nameOutput").text(userData.name + ',');
         $("#necessitiesOverview").text('Total spent on necessities: ' + '$' + needsTotal);
         $("#wantsOverview").text('Total spent on wants: ' + '$' + wantsTotal);
         $("#saveOverview").text('Total put into savings: ' + '$' + savesTotal);
