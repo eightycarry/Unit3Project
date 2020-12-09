@@ -47,15 +47,15 @@
 
         <div id="data" class="tab-pane">
             <div id="userData">
-                    <form>
+                    <form id="pfForm">
                         <h3><u>User Info</u></h3>
                         <label for="name">Full Name: </label>
-                        <input type="text" id="name" name="userData">
+                        <input type="text" id="name" name="name" class="form-control">
                         <br><br>
 
                         <h3><u>Financial Information</u></h3>
                         <label for="income">Monthly income post-tax: </label>
-                        <input type="number" id="income" name="monthlyIncome">
+                        <input type="number" id="income" name="income" class="form-control">
                         <br><br>
                         <h5>How much you have for: </h5>
                         <p>Necessities: $<span id="necessities">0</span></p>
@@ -66,57 +66,68 @@
                         <h4><u>Monthly Expenses / Contributions</u></h4>
                         <br>
 
-                        <h5>Necessities</h5>
+                        <h5>Necessities (if none, enter 0)</h5>
                         <label for="bills">Bills: </label>
-                        <input type="number" id="bills" name="necessities">
+                        <input type="number" id="bills" name="necessities" class="form-control">
                         <br>
                         <label for="food">Food: </label>
-                        <input type="number" id="food" name="necessities">
+                        <input type="number" id="food" name="necessities" class="form-control">
                         <br>
                         <label for="housing">Housing: </label>
-                        <input type="number" id="housing" name="necessities">
+                        <input type="number" id="housing" name="necessities" class="form-control">
                         <br>
                         <label for="transportation">Transportation: </label>
-                        <input type="number" id="transportation" name="necessities">
+                        <input type="number" id="transportation" name="necessities" class="form-control">
                         <br>
                         <label for="utilities">Utilities: </label>
-                        <input type="number" id="utilities" name="necessities">
+                        <input type="number" id="utilities" name="necessities" class="form-control">
                         <br>
                         <label for="otherNecessities">Other: </label>
-                        <input type="number" id="otherNecessities" name="necessities">
+                        <input type="number" id="otherNecessities" name="necessities" class="form-control">
                         <br><br>
 
-                        <h5>Wants</h5>
+                        <h5>Wants (if none, enter 0)</h5>
                         <label for="subs">Monthly Subscriptions: </label>
-                        <input type="number" id="subs" name="wants">
+                        <input type="number" id="subs" name="wants" class="form-control">
                         <br>
                         <label for="travel">Travel: </label>
-                        <input type="number" id="travel" name="wants">
+                        <input type="number" id="travel" name="wants" class="form-control">
                         <br>
                         <label for="entertainment">Entertainment: </label>
-                        <input type="number" id="entertainment" name="wants">
+                        <input type="number" id="entertainment" name="wants" class="form-control">
                         <br>
                         <label for="mealsOut">Meals Out: </label>
-                        <input type="number" id="mealsOut" name="wants">
+                        <input type="number" id="mealsOut" name="wants" class="form-control">
                         <br>
                         <label for="otherWants">Other: </label>
-                        <input type="number" id="otherWants" name="wants">
+                        <input type="number" id="otherWants" name="wants" class="form-control">
                         <br><br>
 
-                        <h5>Savings & Debt Repayment</h5>
+                        <h5>Savings & Debt Repayment (if none, enter 0)</h5>
                         <label for="savings">Savings: </label>
-                        <input type="number" id="savings" name="save">
+                        <input type="number" id="savings" name="save" class="form-control">
                         <br>
                         <label for="debt">Debt: </label>
-                        <input type="number" id="debt" name="save">
+                        <input type="number" id="debt" name="save" class="form-control">
                         <br>
                         <label for="otherSavings">Other: </label>
-                        <input type="number" id="otherSavings" name="save">
+                        <input type="number" id="otherSavings" name="save" class="form-control">
                         <br><br>
 
-                        <span id="necessitiesOverview"></span>
-                        <span id="wantsOverview"></span>
-                        <span id="saveOverview"></span>
+                        <h3><span id="nameOutput"></span></h3>
+                        <br>
+                        <h5><span id="necessitiesOverview"></span></h5>
+                        <br>
+                        <h5><span id="wantsOverview"></span></h5>
+                        <br>
+                        <h5><span id="saveOverview"></span></h5>
+                        <br>
+                        <h4><span id="adviceN"></span></h4>
+                        <br>
+                        <h4><span id="adviceW"></span></h4>
+                        <br>
+                        <h4><span id="adviceS"></span></h4>
+                        <br>
 
                         <button id="financeButton">Submit</button>
                     </form>
@@ -137,15 +148,16 @@
         <p>Created by Calvin Lor</p><p>Copyright © 2020</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-    <script src="pf.js"></script>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+<script src="pf.js"></script>
+
 </html>

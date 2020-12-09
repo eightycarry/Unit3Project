@@ -11,8 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9136fd93-1842-4d0b-983a-d531c8fc3b70" name="Default Changelist" comment="Unit3Project">
+      <change beforePath="$PROJECT_DIR$/.idea/Unit3Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Unit3Project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pf.js" beforeDir="false" afterPath="$PROJECT_DIR$/pf.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +45,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BMI-Calculator" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -54,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607375023652</updated>
-      <workItem from="1607375024701" duration="12306000" />
+      <workItem from="1607375024701" duration="22244000" />
     </task>
     <task id="LOCAL-00001" summary="Unit3Project">
       <created>1607376219682</created>
@@ -91,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607463541195</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Unit3Project">
+      <created>1607468737134</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607468737135</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,10 +123,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="Unit3Project" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607463551495">
+    <state x="586" y="198" key="#Inspections" timestamp="1607530360586">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607463551495" />
+    <state x="586" y="198" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1607530360586" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1607532103997">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607532103997" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607468737936">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607468737936" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607376215631">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
